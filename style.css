@@ -1,0 +1,144 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'San Francisco', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li.logo {
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff7f50;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+#about {
+    padding: 40px;
+}
+
+#about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 40px;
+}
+
+#portfolio h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.portfolio-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item {
+    display: none;
+}
+
+.portfolio-item.active {
+    display: block;
+}
+
+.portfolio-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #999;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Additional Styling and Customizations */
+/* Add your own styles and customizations below this comment */
