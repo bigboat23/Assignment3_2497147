@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add any additional styles specific to the blog section here */
+    /* ... CSS styles provided ... */
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">Profile</a></li>
+        <li><a href="#portfolio">Blogs</a></li>
+        <li><a href="#Design">Essay</a></li>
+        <li><a href="#contact">Design</a></li>
+        <li><a href="#contact">Portfolio</a></li>
+        <li class="logo"><a href="#">BOAT23</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Boat</h1>
+      <p>Welcome to my portfolio</p>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="blog-container">
+      <h2>Blog</h2>
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('week1')">Week 1</button>
+          <div id="week1" class="dropdown-content">
+            <!-- Content for Week 1 -->
+            <h3>Week 1 Blog Post</h3>
+            <p>Git: I had previously used Github in the previous year, so setting it up wasn’t very difficult. I won’t spend too much time on this here.
+              Library of Babe: Just as the library contains an infinite number of books, the internet contains an endless amount of information, accessible from all corners of the world. Like the librarians in the story, we as users of the internet are often overwhelmed by the vastness of information available, and we struggle to find meaning or significance in it. the story also touches on the idea that despite the vastness of the library or the internet, there may be limits to what we can know and understand. similarly, despite the abundance of information available on the internet, there may be inherent limitations to our ability to fully comprehend the complexities of the world we live in. This also coupled with the deteriorating attention spans further proves the main point of the reading. As we touched upon in class too, with the growth of all this information, it mostly all ends up in the same industry in the end.
+              My goal in this course is to acquire new skills and knowledge, whether in a successful or unsuccessful way, according to the CBO. The reason why I chose this particular course is my fascination with the design of user interfaces (UI) and user experiences (UX), not just limited to websites but in various industries and products. I am intrigued by how our interactions with these products impact our overall experience and performance.
+            </p>
+          </div>
+        </div>
+        <!-- Add the remaining dropdowns here -->
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('week2')">Week 2</button>
+          <div id="week2" class="dropdown-content">
+            <!-- Content for Week 2 -->
+            <h3>Week 2 Blog Post</h3>
+            <p>Content for Week 2</p>
+          </div>
+        </div>
+        <!-- Add more dropdowns for each week -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Get in touch with me:</p>
+    <ul>
+      <li>Email: Mdottee@gmail.com</li>
+      <li>Phone: mmwe</li>
+      <!-- Add more contact details as needed -->
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Boat. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDropdown(dropdownId) {
+      var dropdown = document.getElementById(dropdownId);
+      if (dropdown.style.display === "none") {
+        dropdown.style.display = "block";
+      } else {
+        dropdown.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

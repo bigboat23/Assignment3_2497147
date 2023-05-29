@@ -48,11 +48,45 @@ dots.forEach((dot, index) => {
   });
 });
 
-// Show or hide scroll to top button
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 500) {
-    scrollButton.classList.add('show');
+// Smooth Dropdown
+function toggleDropdown(week) {
+  const dropdownContent = document.getElementById(week);
+  const isDisplayed = getComputedStyle(dropdownContent).display !== 'none';
+  dropdownContent.style.display = isDisplayed ? 'none' : 'block';
+
+  if (isDisplayed) {
+    dropdownContent.style.maxHeight = '0';
   } else {
-    scrollButton.classList.remove('show');
+    dropdownContent.style.maxHeight = `${dropdownContent.scrollHeight}px`;
+  }
+}
+
+// Blog Post Content
+const blogButtons = document.querySelectorAll('.week-button');
+const blogContent = document.querySelector('.blog-content');
+
+blogButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const week = button.dataset.week;
+    const weekContent = getBlogContent(week);
+    blogContent.textContent = weekContent;
+  });
+});
+
+function getBlogContent(week) {
+  // Here, you can define the content for each week
+  // You can use a switch statement or an object to map the weeks to their content
+  // Replace the placeholder content below with the actual content for each week
+  switch (week) {
+    case 'week1':
+      return 'Week 1 Content';
+    case 'week2':
+      return 'Week 2 Content';
+    case 'week3':
+      return 'Week 3 Content';
+    // Add more cases for each week
+    default:
+      return 'No content available';
   }
 });
+
