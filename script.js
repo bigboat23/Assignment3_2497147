@@ -1,10 +1,10 @@
 // Smooth Scrolling
-const navLinks = document.querySelectorAll('nav ul li a');
+const scrollLinks = document.querySelectorAll('a.smooth-scroll');
 
-navLinks.forEach(link => {
+scrollLinks.forEach(link => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
-    const target = document.querySelector(event.target.getAttribute('href'));
+    const target = document.querySelector(link.getAttribute('href'));
     if (target) {
       target.scrollIntoView({
         behavior: 'smooth',
@@ -62,31 +62,25 @@ function toggleDropdown(week) {
 }
 
 // Blog Post Content
-const blogButtons = document.querySelectorAll('.week-button');
+const blogLinks = document.querySelectorAll('.week-link');
 const blogContent = document.querySelector('.blog-content');
 
-blogButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const week = button.dataset.week;
+blogLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const week = link.getAttribute('href');
     const weekContent = getBlogContent(week);
     blogContent.textContent = weekContent;
+    document.getElementById(week.substring(1)).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   });
 });
 
+// Helper function to retrieve blog content based on week
 function getBlogContent(week) {
-  // Here, you can define the content for each week
-  // You can use a switch statement or an object to map the weeks to their content
-  // Replace the placeholder content below with the actual content for each week
-  switch (week) {
-    case 'week1':
-      return 'Week 1 Content';
-    case 'week2':
-      return 'Week 2 Content';
-    case 'week3':
-      return 'Week 3 Content';
-    // Add more cases for each week
-    default:
-      return 'No content available';
-  }
-});
+  
+}
+
 

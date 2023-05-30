@@ -7,6 +7,14 @@
     /* Add any additional styles specific to the blog section here */
     /* ... CSS styles provided ... */
   </style>
+
+<script>
+  function scrollToElement(elementId) {
+      var element = document.getElementById(elementId);
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+</script>
+
 </head>
 <body>
   <header>
@@ -22,41 +30,171 @@
     </nav>
   </header>
 
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Boat</h1>
-      <p>Welcome to my portfolio</p>
+  <section id="blog-buttons">
+    <div class="button-container">
+      <button onclick="scrollToElement('week1')">Go to Week 1</button>
+      <button onclick="scrollToElement('week2')">Go to Week 2</button>
+      <button onclick="scrollToElement('week3')">Go to Week 3</button>
+      <button onclick="scrollToElement('week4')">Go to Week 4</button>
+      <button onclick="scrollToElement('week5')">Go to Week 5</button>
+      <button onclick="scrollToElement('week7')">Go to Week 7</button>
+      <button onclick="scrollToElement('week8')">Go to Week 8</button>
+      <button onclick="scrollToElement('week9')">Go to Week 9</button>
+      <button onclick="scrollToElement('week10')">Go to Week 10</button>
+      <button onclick="scrollToElement('week10')">Go to Week 11</button>
+      <button onclick="scrollToElement('week10')">Go to Week 12</button>
+      <button onclick="scrollToElement('week10')">Go to Week 10</button>
+
+
     </div>
   </section>
 
   <section id="blog">
-    <div class="blog-container">
+    <div class="blog-content">
       <h2>Blog</h2>
-      <div class="dropdown-container">
-        <div class="dropdown">
-          <button class="dropdown-btn" onclick="toggleDropdown('week1')">Week 1</button>
-          <div id="week1" class="dropdown-content">
-            <!-- Content for Week 1 -->
-            <h3>Week 1 Blog Post</h3>
-            <p>Git: I had previously used Github in the previous year, so setting it up wasn’t very difficult. I won’t spend too much time on this here.
-              Library of Babe: Just as the library contains an infinite number of books, the internet contains an endless amount of information, accessible from all corners of the world. Like the librarians in the story, we as users of the internet are often overwhelmed by the vastness of information available, and we struggle to find meaning or significance in it. the story also touches on the idea that despite the vastness of the library or the internet, there may be limits to what we can know and understand. similarly, despite the abundance of information available on the internet, there may be inherent limitations to our ability to fully comprehend the complexities of the world we live in. This also coupled with the deteriorating attention spans further proves the main point of the reading. As we touched upon in class too, with the growth of all this information, it mostly all ends up in the same industry in the end.
-              My goal in this course is to acquire new skills and knowledge, whether in a successful or unsuccessful way, according to the CBO. The reason why I chose this particular course is my fascination with the design of user interfaces (UI) and user experiences (UX), not just limited to websites but in various industries and products. I am intrigued by how our interactions with these products impact our overall experience and performance.
-            </p>
-          </div>
-        </div>
-        <!-- Add the remaining dropdowns here -->
-        <div class="dropdown">
-          <button class="dropdown-btn" onclick="toggleDropdown('week2')">Week 2</button>
-          <div id="week2" class="dropdown-content">
-            <!-- Content for Week 2 -->
-            <h3>Week 2 Blog Post</h3>
-            <p>Content for Week 2</p>
-          </div>
-        </div>
-        <!-- Add more dropdowns for each week -->
+      <div id="week1">
+        <!-- Content for Week 1 -->
+        <h3>Week 1 Blog Post</h3>
+        <p>Git: I had previously used Github in the previous year, so setting it up wasn’t very difficult. I won’t spend too much time on this here.
+          Library of Babe: Just as the library contains an infinite number of books, the internet contains an endless amount of information, accessible from all corners of the world. Like the librarians in the story, we as users of the internet are often overwhelmed by the vastness of information available, and we struggle to find meaning or significance in it. the story also touches on the idea that despite the vastness of the library or the internet, there may be limits to what we can know and understand. similarly, despite the abundance of information available on the internet, there may be inherent limitations to our ability to fully comprehend the complexities of the world we live in. This also coupled with the deteriorating attention spans further proves the main point of the reading. As we touched upon in class too, with the growth of all this information, it mostly all ends up in the same industry in the end.
+          My goal in this course is to acquire new skills and knowledge, whether in a successful or unsuccessful way, according to the CBO. The reason why I chose this particular course is my fascination with the design of user interfaces (UI) and user experiences (UX), not just limited to websites but in various industries and products. I am intrigued by how our interactions with these products impact our overall experience and performance.
+        </p>
+        <button onclick="scrollToElement('week1')">Go to Week 1</button>
       </div>
+      <!-- Add more blog posts here -->
+      <div id="week2">
+        <!-- Content for Week 2 -->
+        <h3>Week 2 Blog Post</h3>
+        <p>                                                                           Week 2
+
+          My main focus for this week was mainly trying to catch up with all the worse I had missed or wasn’t able to. 
+          I had previously worked a bit with HTML and CSS in High school. But honestly had lost all of the knowledge I had of the work done. I also had watched videos on it, not exactly related to the course material on YouTube further giving me the idea of what I’ll have to learn. The first thing I decided to do again, was just displaying text on a webpage, then display a GIF on the webpage. This was relatively easy, because its similar to other programming languages. 
+          The internet began as a simple mechanism for exchanging research and eventually developed into the large and diverse network of websites we have today. It has become an essential part of our everyday lives, with billions of people utilizing it for communication, information exchange, work, and enjoyment. However, greater connection comes with responsibilities and possible drawbacks, such as difficulties with user privacy and online abuse. Despite these issues, the internet continues to adapt and expand, with continual attempts to make it more accessible and inclusive for all. The section continues by underlining the importance of continuous accountability and innovation in order to guarantee that the internet remains a revolutionary force for positive change in the future.
+          </p>
+      </div>
+
+      <div id="week3">
+        <!-- Content for Week 3 -->
+        <h3>Week 3 Blog Post</h3>
+        <p>                                                                           Week 3
+
+          Website : On making the website, I hadn’t made much progress apart from just wireframing and still trying to figure out exactly what I want to be on my website. I’ve been looking at other websites I’ve liked in the past(some good, some not so good). Then trying to adapt that to my own design for now. What has been interesting to me however, is that most of these sites aren’t actually clean or easy to use, but I’ve still adapted to using them all the time on the daily, YouTube, the Supersport site and BT Sport being examples of these.
+          Reading reflection: Similar to how literary interpretation relates and depends on both the convention and context, effective UI/Ux similarly relies on understanding the user and already known design conventions. The designer should be aware and use the current design conventions that the users have already been accustomed to in their other digital spaces, but also consider what the context of the design. Like, the specific work environment, the device the interface. This will ultimately have an influence on the design decisions put forward. 
+          
+          </p>
+      </div>
+
+      <div id="week4">
+        <!-- Content for Week 3 -->
+        <h3>Week 4 Blog Post</h3>
+        <p>                                                                           Week 4
+
+          Website : My design so far has been rough and basic, but I can already tell that some revisions need to be done. In the previous week, I tried looking at some of the sites I use for inspiration and drew down basic wireframes of them. I found that they aren’t exactly quite good to interact with, but there are some design decisions done on purpose. On the YouTube mobile app for example, in order to comment on a video, you’ll will have to scroll down and see through some other recommend videos, before getting to the comment section. This was done with the obvious intention of making you view more content, but I dislike having to do so much when a button for this could’ve been added together with the dislike and like section.
+Readings and lecture reflection: What I got from the readings is: is that design is mostly about problem-solving and the responsibility on the designer’s side to be inclusive and sustainable (Papanek,1984), interface design should go beyond the traditional GUIS and consider the user’s goals(Gibson, 2004) and that effective UI design must prioritize the users’ experience. The main thing in common here, is that they all prioritize and emphasize the importance of the user and meeting their by solving their problems. 
+In the lecture, we discussed how interactivity and interface are linked in their existence. Many parts of the design aren’t exclusive to each other, and have a direct relationship. 
+Own Design relating to readings: My own design at this point has kind of stagnated. I haven’t done too much to improve on it. But after the readings, I know about some of the things I have to consider about the user. As I had previously mentioned on my analysis of the YouTube GUI, there are some obvious design decisions that I will have to try and achieve. 
+I also had the same finding with my wireframes, that I wasn’t largely taking the user’s goals into consideration, but mostly just trying to show as much content as possible to the user. The end goal of this site, will be to make a user-friendly site that will meet their demands, which is to get all the information they’ve come onto the site for.
+
+          
+          </p>
+      </div>
+      
+      <div id="week5">
+        <!-- Content for Week 5 -->
+        <h3>Week 5 Blog Post</h3>
+        <p>
+          This week I didn’t really look at academic readings but UI and design in the industry, particularly the computing devices industry. I found it interesting how Apple’s overall design in the industry has almost become the standard/benchmark. 
+          But one of the main reasons I found for their consistency over their products, is because of the very small lineup of products relative to their main competitors in Samsung/Dell/Xiaomi. This is also why a lot of other devices have better optimization than Apple devices because of their closed-off hardware and software variations. 
+          Onwards and Upwards.(2022). Everyone Wants to be Apple [Video]. YouTube. https://youtu.be/3XuP_I28HgY
+          
+
+        </p>
+      </div>
+
+      <div id="week7">
+        <!-- Content for Week 7 -->
+        <h3>Week 7 Blog Post</h3>
+        <p>
+          Website : This week, basically just some basic tinkering on the website. Most of the work went towards doing the readings, but I made the decision that I would only mainly focus on making the site using HTML and CSS. The reason for this, is because I would like to try and keep it a bit simple, also because my understanding of Javascript is quite low at this point.
+          Readings : The reading mainly describes user experience as the response given by the user based on the usage of the specific system. It is also defined as encompassing different aspects as well, like usability and satisfaction. This made me think of Apple and how their man focuses in design are to make user-friendly systems that are also aesthetically pleasing. They also argue the sentiment that design should both be objective and subjective. Analysis and review with self-report measures as well as objective methods. Lastly, it also speaks about how research in UX can lead to the development of more improved guidelines and designs for their customers. An example of this is Amazon’s consistent use of surveys and studies on how they can enhance usability and increase customer satisfaction. The Amazon one-click checkout system was designed through this system, to make a quick and more streamlined checkout process. 
+          IxD Process: 
+          Honestly, at this moment I hadn’t done much more than drawing up wireframes for the site. I’ve only made a single page for the site using html and css. From this I have only set out my main goal, which is to make a website that’s easy to navigate without any hurdles. In terms of the navigation, I’ve only though about having the user clicking on links and maybe scrolling through other sections as well.
+          
+        </p>
+      </div>
+      <!-- Add more blog posts here -->
+      <div id="week8">
+        <!-- Content for Week 8 -->
+        <h3>Week 8 Blog Post</h3>
+        <p>
+
+        </p>
+      </div>
+
+      <div id="week9">
+        <!-- Content for Week 8 -->
+        <h3>Week 9 Blog Post</h3>
+        <p>
+
+        </p>
+      </div>
+
+      <div id="week10">
+        <!-- Content for Week 8 -->
+        <h3>Week 10 Blog Post</h3>
+        <p>
+
+        </p>
+      </div>
+
+      <div id="week11">
+        <!-- Content for Week 8 -->
+        <h3>Week 11 Blog Post</h3>
+        <p>
+          On further development of the site, this week after doing the exercise on dark mode and themes, I looked at ways to incorporate this into my website. The dark theme, being something, I quickly adopted when it became standard is something I will certainly look to use. Mainly because of it being  bit lighter on the eyes, than an all-light UI. This decision also relates back to reading on UX and Ion decisions being made for being user friendly. 
+          Reading reflection : The reading on retrocomputing and the presentation on "How We Code Matters" show the significant role that our education system and coding habits play in maintaining colonial thinking and supporting power dynamics. Our capacity to produce inclusive solutions is hampered by our rigorous devotion to a scientific or "positivist" ideology that regards reality as unchanging and universal. In the disciplines of web design and IT, it is critical to challenge the current quo and the concept of neutrality. According to Grace Hopper, a pioneering computer scientist, "the most dangerous phrase in the language is, 'We've always done it this way.'" As web designers and IT professionals, we must actively seek different ideas and break away from the restrictions of the convention.
+          Benefits and Challenges of responsive design 
+          -	I’ve looked at making sure that the User Experience is enhanced by providing optimal viewing experiences for user on multiple devices and having very easily readable text and properly sized images. 
+          
+        </p>
+      </div>
+
+      <div id="week12">
+        <!-- Content for Week 8 -->
+        <h3>Week 12 Blog Post</h3>
+        <p>
+          READING 
+          Costanza-Chock's reading on "Traveling While Trans" demonstrates how preconceptions and prejudices built in software development may lead to exclusion and discrimination. It highlights the need of cooperation and bridging design gaps through the Design Justice Network. The reading also calls into question the idea that current institutions are "working" because they serve the majority. It emphasizes the need of designing systems with a larger demography in mind, ensuring that marginalized people's perspectives and experiences are heard and addressed. The reading serves as a reminder that our coding and design decisions have real-world implications, and it emphasizes the critical need of eliminating systematic prejudices and prioritizing engagement with disadvantaged populations. We can pave the road forward by embracing a design justice approach
+          APIS
+          Exploring APIs in our web development class has been quite beneficial. We found the enormous power and adaptability that APIs provide through practical instances. One example was the seamless integration of external photos into our web application, demonstrating how APIs allow us to access huge online resources and enhance our web pages with dynamic content. This practical experiment highlighted the ease and effectiveness of using APIs to improve the aesthetic appeal and user experience of our websites. In addition, we investigated accessing a product database comparable to platforms like Takealot or Amazon, which would allow us to give our users with up-to-date and comprehensive product information without the need for manual curation or maintenance of our own database. This revealed APIs' enormous potential for enhancing the functions of web apps and improving UX. 
+          The implementation of my website would be most likely for social media integration, directly to yhe site. In the real world, this also gives the visitors more incentive to view your work on other sites that they might be more used to themselves, or just use for communication as well. 
+          
+        </p>
+      </div>
+
+      <div id="week13">
+        <!-- Content for Week 8 -->
+        <h3>Week 13 Blog Post</h3>
+        <p>
+          API Implementation
+          So far, apart from what I already thought about in terms of APIs from the previous week, on integrating links to social pages, maybe also integrating a YouTube site into the website. But I’m still stuck up on what value this will add to the site, and what it will be used for in the site. I’ve also thought about images and GIFs for reference points in some parts of the site. 
+          Readings Reflection On Readings 
+          Digital Equality Interview with Nanjira Sambuli
+          The article is an interview with Nanjira Sambuli, a Kenyan scholar and digital rights and policy advocate. It focuses on the concept of digital equality, with a special emphasis on Africa. Sambuli highlights the significance of granting all individuals, regardless of socioeconomic class or geography, equal access and involvement in the digital world. She addresses the importance of bridging the digital divide through concerns such as infrastructure development, affordability, and digital literacy. Sambuli also emphasizes the role of governments and the business sector in encouraging inclusivity, emphasizing the need of not only addressing access to technology, but also its effective use and the protection of digital rights and privacy. The purpose is to create awareness about the importance of digital equality and the issues that it presents.
+          The concept of digital equality raises crucial considerations about the equitable and inclusive distribution of digital resources and opportunities. It emphasizes the need of ensuring that all persons, regardless of socioeconomic status or geographic location, have equal access to and involvement in the digital environment. This is consistent with the values of justice and equity, as it emphasizes the significance of closing the digital divide.
+          Sambuli's emphasis on infrastructure development, cost, and digital literacy as critical variables in attaining digital equality underscores the complexity of this task. It is not only about providing access to technology, but also about equipping folks with the skills and information needed to properly use and navigate the digital landscape.
+          Digital Inclusion
+          This article focuses the changes, possibilities, and hazards connected with digital innovation, with a focus on digital inclusion. It highlights the significance of making information and communication technologies available to all persons and groups, as well as advocating inclusive solutions. The article emphasizes the existence of a digital gap caused by factors such as high pricing, a lack of infrastructure, and low digital literacy. It highlights regional inequalities in internet availability, with Africa having only 39.3% of its people online, while other areas have larger percentages. The COVID-19 pandemic emphasized the importance of digital access, as it became necessary for different elements of response and daily life. The digital gap, on the other hand, has expanded inequality and excluded certain communities.
+          
+        </p>
+      </div>
+
+
+       
+
     </div>
   </section>
+
 
   <section id="contact">
     <h2>Contact</h2>
@@ -73,13 +211,9 @@
   </footer>
 
   <script>
-    function toggleDropdown(dropdownId) {
-      var dropdown = document.getElementById(dropdownId);
-      if (dropdown.style.display === "none") {
-        dropdown.style.display = "block";
-      } else {
-        dropdown.style.display = "none";
-      }
+    function scrollToElement(elementId) {
+      var element = document.getElementById(elementId);
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   </script>
 </body>
