@@ -65,6 +65,8 @@ nav ul li a:hover {
     color: #fff;
 }
 
+
+
 .hero-content h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -147,11 +149,7 @@ footer {
     padding: 20px;
     text-align: center;
 }
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-  }
-  
+
 #blog {
     padding: 40px;
     text-align: center;
@@ -162,4 +160,47 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    background-color: transparent;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+    font-family: 'San Francisco', Arial, sans-serif;
+    font-size: 16px;
+    color: #84848a;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    background-color: #f5f5f5;
+    color: #333;
+  
+
+  }
+
+  #image-track> .image{
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #image-track{
+    display: flex;
+    gap:4vmin;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-100%,-50%);
+  }
 

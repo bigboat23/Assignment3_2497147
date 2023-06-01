@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    body{
+        height: 100vh;
+        width : 100vw;
+        margin: 0rem;
+        overflow: hidden;
+
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">Profile</a></li>
+        <li><a href="#portfolio">Blogs</a></li>
+        <li><a href="#design">Essay</a></li>
+        <li><a href="#contact">Design</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li class="logo"><a href="#">BOAT23</a></li>
+
+        <button> </button>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+
+    <img class="image" src="https://th.bing.com/th/id/OIG.G62LJpGFT5g.hft7NAu8?pid=ImgGn/" draggable="false">
+    <img class="image" src="https://th.bing.com/th/id/OIG.RjXSPuTeyLI3zzfKQC_m?pid=ImgGn/" draggable="false" >
+    <img class="image" src="https://th.bing.com/th/id/OIG.G62LJpGFT5g.hft7NAu8?pid=ImgGn/" draggable="false">
+  </div>
+
+
+
+  
+
+  <script src="script.js">
+window.onmouseup =() =>{
+    track.dataset.mouseDownAt ="0";
+    track.datatset.prevPercentage = track.dataset.percentage;
+}
+
+  </script>
+</body>
+</html>
+
