@@ -3,53 +3,30 @@
 <head>
   <title>Home</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  <style>
-
-    body{
-        height: 100vh;
-        width : 100vw;
-        margin: 0rem;
-        overflow: hidden;
-
-    }
-
-  </style>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="#about">Profile</a></li>
-        <li><a href="#portfolio">Blogs</a></li>
-        <li><a href="#design">Essay</a></li>
-        <li><a href="#contact">Design</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li class="logo"><a href="#">BOAT23</a></li>
-
+        <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="blog.html"><i class="fas fa-blog"></i> Blogs</a></li>
+        <li><a href="essay.html"><i class="fas fa-file-alt"></i> Essay</a></li>
+        <li><a href="design.html"><i class="fas fa-pencil-ruler"></i> Design</a></li>
+        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li class="logo"><a href="main.html">BOAT23</a></li>
         <button> </button>
       </ul>
     </nav>
   </header>
 
   <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-
     <img class="image" src="https://th.bing.com/th/id/OIG.G62LJpGFT5g.hft7NAu8?pid=ImgGn/" draggable="false">
-    <img class="image" src="https://th.bing.com/th/id/OIG.RjXSPuTeyLI3zzfKQC_m?pid=ImgGn/" draggable="false" >
+    <img class="image" src="https://th.bing.com/th/id/OIG.RjXSPuTeyLI3zzfKQC_m?pid=ImgGn/" draggable="false">
     <img class="image" src="https://th.bing.com/th/id/OIG.G62LJpGFT5g.hft7NAu8?pid=ImgGn/" draggable="false">
   </div>
 
-
-
-  
-
-  <script src="script.js">
-window.onmouseup =() =>{
-    track.dataset.mouseDownAt ="0";
-    track.datatset.prevPercentage = track.dataset.percentage;
-}
-
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
-

@@ -1,50 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #efefef;
+      color: #000;
+      padding: 20px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #000;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li a:hover {
+      background-color: #f5f5f5;
+      color: #333;
+      border-radius: 4px;
+    }
+
+    .logo a {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .menu-icon {
+      display: none;
+      background-color: transparent;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      padding: 5px;
+    }
+
+    main {
+      flex-grow: 1;
+    }
+
+    #hero {
+      background-color: #f5f5f5;
+      padding: 40px;
+      text-align: center;
+    }
+
+    #hero-content {
+      margin-top: 40px;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+    }
+
+    .hero-content p {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      display: none;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    .scroll-to-top:hover {
+      background-color: #efefef;
+    }
+
+    footer {
+      background-color: #efefef;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="#about">Profile</a></li>
-        <li><a href="#portfolio">Blogs</a></li>
-        <li><a href="#design">Essay</a></li>
-        <li><a href="#contact">Design</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li class="logo"><a href="#">BOAT23</a></li>
-
-        <button> </button>
+        <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="blog.html"><i class="fas fa-blog"></i> Blogs</a></li>
+        <li><a href="essay.html"><i class="fas fa-file-alt"></i> Essay</a></li>
+        <li><a href="design.html"><i class="fas fa-pencil-ruler"></i> Design</a></li>
+        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li class="logo"><a href="main.html">BOAT23</a></li>
       </ul>
+      <button class="menu-icon" aria-label="Toggle Navigation Menu"><i class="fas fa-bars"></i></button>
     </nav>
   </header>
 
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Boat</h1>
-      <p>Welcome to my portfolio</p>
-    </div>
-  </section>
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Mthokozisi Kubheka!</h1>
+        <p>Welcome to my portfolio website</p>
+      </div>
+     
+    </section>
+    
+  </main>
 
-  <section id="about">
-    <h2>About</h2>
-
-  </section>
-
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <!-- Add your content for the Portfolio section here -->
-  </section>
-
-  <section id="design">
-    <h2>Design</h2>
-    <!-- Add your content for the Design section here -->
-  </section>
-
- 
-
+  <button class="scroll-to-top" aria-label="Scroll to Top"><i class="fas fa-arrow-up"></i></button>
+  
   <script src="script.js"></script>
+
+  <footer>
+    <p>ya mom</p>
+  </footer>
 </body>
 </html>
-
