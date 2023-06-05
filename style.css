@@ -10,7 +10,9 @@ body, h1, h2, h3, p, ul, li {
     line-height: 1.5;
     color: #333;
     background-color: #f8f8f8; /* Set a light background color */
+  
   }
+ 
   
   /* Header and Navigation */
   header {
@@ -19,7 +21,8 @@ body, h1, h2, h3, p, ul, li {
     display: flex;
     justify-content: center; /* Center align the navigation */
   }
-  
+
+
   nav ul li {
     display: inline;
     margin-right: 20px;
@@ -173,22 +176,22 @@ body, h1, h2, h3, p, ul, li {
     margin-bottom: 20px;
   }
   
-  #EssayContent {
+  main {
     text-align: center;
     margin: 150px auto; /* Adjust the margin to center and lower the section */
     max-width: 800px; /* Set a max-width for better centering */
   }
   
   /* Adjust the paragraph alignment */
-  #EssayContent p {
+  main p {
     text-align: justify; /* Justify the text to create clean edges */
+    margin: 0 20px; /* Add some horizontal margin for better readability */
   }
   
   /* Adjust the h1 margin for better centering */
-  #EssayContent h1 {
-    margin-top: -100px; /* Reduce the top margin for better centering */
-    flex: auto;
-    margin-bottom: auto;
+  main h1 {
+    margin-top: 50px; /* Reduce the top margin for better centering */
+    margin-bottom: 20px; /* Add some bottom margin for separation */
   }
   
   /* Footer */
@@ -287,8 +290,8 @@ body, h1, h2, h3, p, ul, li {
     font-size: 14px;
   }
   
-  /* Styles for screens smaller than 768px */
-  @media (max-width: 767px) {
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
     /* Modify header and navigation styles */
     header {
       padding: 10px;
@@ -311,7 +314,32 @@ body, h1, h2, h3, p, ul, li {
     .about-text {
       width: 100%;
     }
+  
+    
+    /* Adjust button styles */
+    .button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    /* Update image styles */
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .image-wrapper {
+      flex-basis: 50%;
+      padding: 5px;
+    }  
+    .image-wrapper img {
+      max-width: 100%;
+      height: auto;
+    }
   }
+  
   
   /* Styles for screens larger than 768px */
   @media (min-width: 768px) {
@@ -347,16 +375,78 @@ body, h1, h2, h3, p, ul, li {
     object-position: center;
   }
   
- #ui-ux {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px; /* Add padding to create space on the left and right sides */
-}
+  #wireframes .image-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #wireframes .image-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  #wireframes .image-wrapper img {
+    max-width: 300px;
+    height: auto;
+  }
+  
+  #wireframes .image-wrapper p {
+    text-align: center;
+  }
+ 
+  #ui-ux {
+    text-align: center;
+    margin: 150px auto; /* Adjust the margin to center and lower the section */
+    max-width: 800px; /* Set a max-width for better centering */
+  }
+  
+ #blog{
+    text-align: center;
+    margin: 150px auto;  
+    max-width: 800px; 
+ }
+  
+ .scroll-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  
+  .scroll-to-top-button.show {
+    display: block;
+  }
+  
+  #style-guide .image-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #style-guide .image-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  #style-guide .image-wrapper img {
+    max-width: 300px;
+    height: auto;
+  }
+  
+  #style-guide .image-wrapper p {
+    text-align: center;
+  }
 
-#ui-ux p {
-  margin: 10px auto; /* Set auto margin on the top and bottom, and auto on the left and right sides */
-  max-width: 500px; /* Optional: Add a maximum width to limit the width of the paragraphs */
-}
-
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
   

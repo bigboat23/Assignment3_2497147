@@ -22,13 +22,24 @@ menuIcon.addEventListener('click', () => {
   mobileNav.classList.toggle('show');
 });
 
-// Scroll to Top Button
-const scrollButton = document.querySelector('.scroll-to-top');
+// Select the scroll-to-top button
+const scrollToTopButton = document.getElementById('scrollToTopButton');
 
-scrollButton.addEventListener('click', () => {
+// Show or hide the scroll-to-top button based on the scroll position
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 100) {
+    scrollToTopButton.classList.add('show');
+  } else {
+    scrollToTopButton.classList.remove('show');
+  }
+});
+
+// Scroll to the top when the button is clicked
+scrollToTopButton.addEventListener('click', function (e) {
+  e.preventDefault();
   window.scrollTo({
     top: 0,
-    behavior: 'smooth',
+    behavior: 'smooth'
   });
 });
 
@@ -46,28 +57,3 @@ function toggleDropdown(week) {
   }
 }
 
-// Scroll to Element
-function scrollToElement(elementId) {
-  const element = document.getElementById(elementId);
-  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-
-
-// Get the current page URL
-const currentPage = window.location.href;
-
-// Get all the navigation links
-const navLinks = document.querySelectorAll('nav ul li a');
-
-// Loop through each link and check if it matches the current page
-navLinks.forEach(link => {
-  if (link.href === currentPage) {
-    // Add the active class to the parent li element
-    link.parentNode.classList.add('active');
-    
-    // Add the glowing or lighting effect to the link icon
-    const icon = link.querySelector('i');
-    icon.classList.add('glow'); // Replace 'glow' with the desired CSS class name for the effect
-  }
-});
