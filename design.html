@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
   <style>
-    /* Reset default browser styles */
+
  
   </style>
   
@@ -15,25 +15,25 @@
   <header>
     <nav>
       <ul>
-        <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
-        <li><a href="blog.html"><i class="fas fa-blog"></i> Blogs</a></li>
-        <li><a href="essay.html"><i class="fas fa-file-alt"></i> Essay</a></li>
-        <li><a href="design.html"><i class="fas fa-pencil-ruler"></i> Design</a></li>
-        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="index.html" class="home-button"><i class="fas fa-home"></i></a></li>
+        <li><button id="profileButton"><i class="fas fa-user"></i> Profile</button></li>
+        <li><button id="blogButton"><i class="fas fa-blog"></i> Blogs</button></li>
+        <li><button id="essayButton"><i class="fas fa-file-alt"></i> Essay</button></li>
+        <li><button id="designButton"><i class="fas fa-pencil-ruler"></i> Design</button></li>
+        <li><button id="portfolioButton"><i class="fas fa-briefcase"></i> Portfolio</button></li>
+        <li><button id="homeButton"><i class="fas fa-home"></i> Home</button></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div class="nav-buttons">
+    <section class="nav-buttons">
       <button onclick="scrollToElement('process')">IxD Process</button>
       <button onclick="scrollToElement('wireframes')">Wireframes</button>
       <button onclick="scrollToElement('ui-ux')">UI and UX</button>
       <button onclick="scrollToElement('interface-elements')">Interface Elements</button>
       <button onclick="scrollToElement('style-guide')">Style Guide</button>
       <button onclick="scrollToElement('references')">References</button>
-    </div>
+    </section>
 
     <section id="process">
       <h2>IxD Process</h2>
@@ -47,30 +47,30 @@
       <h2>Wireframes</h2>
       <div class="image-container">
 
-        <div class="image-wrapper">
+        <section class="image-wrapper">
           <img src="Design\Wireframes\HomePage.png" alt="Wireframe 1">
           <p>Homepage Wireframe</p>
-        </div>
+        </section>
         
-        <div class="image-wrapper">
+        <section class="image-wrapper">
           <img src="Design\Wireframes\blog.png" alt="Wireframe 2">
           <p>Blog Wireframe</p>
-        </div>
+        </section>
 
-        <div class="image-wrapper">
+        <section class="image-wrapper">
           <img src="Design\Wireframes\Essay Section.png" alt="Wireframe 3">
           <p>Essay Page Wireframe</p>
-        </div>
+        </section>
 
-        <div class="image-wrapper">
+        <section class="image-wrapper">
           <img src="Design\Wireframes\Design Section.png" alt="Wireframe 4">
           <p>Design Page Wireframe</p>
-        </div>
+        </section>
 
-        <div class="image-wrapper">
+        <section class="image-wrapper">
           <img src="Design\Wireframes\Portfolio.png" alt="Wireframe 5">
           <p>Portfolio Page Wireframe</p>
-        </div>
+        </section>
         
       </div>
     </section>
@@ -91,7 +91,8 @@
 
     <section id="ui-ux">
       <h2>UI Description</h2>
-      <p style="text-align: center;">Home Page<br>
+      <p style="text-align: center;">Home Page</p>
+        <p>
         The home page features a hero section that immediately captures the user's attention with compelling text and a short description of what they can expect on other parts of the site.<br> This design choice aligns with Papanek's notion that design should be revolutionary and socially responsible. By presenting a clear overview of the site's content, we aim to engage users and provide them with a meaningful experience.
         </p>
       <p style="text-align: center;"><br>
@@ -116,11 +117,31 @@
     <section id="style-guide">
       <h2>Style Guide</h2>
     
-      <div class="image-wrapper">
+      <section class="image-wrapper">
         <img src="Design\style guide.png" alt="style-guide">
-        <p></p>
-      </div>
+        <p>
+          <strong>Colour Theory and Relationships:</strong>
+          The gradient colors #000, #ddd, and #000 are used for the background-clip effect on the hero section's heading and paragraph text.
+        </p>
+
+        <p>
+          <strong>Composition:</strong>
+          The hero section uses a background image (hero-bg.jpg) positioned at the center with a cover size.
+          The about section has a centered text alignment and a container with a max-width of 800px for better composition.
+        </p>
+ 
+        <p>
+          <strong>Hierarchy, Balance, Harmony:</strong>
+         <p> Heading elements (h1, h2) have larger font sizes and distinct margins for hierarchy.</p> 
+         <p>The about section has a h2 heading with a font size of 32px for emphasis. </p> 
+         <p> The content in the about section is balanced with flexbox, using a combination of image and text sections.</p> 
+        </p>
+
+        
+      </section>
     </section>
+
+
     
 
     <section id="references">
@@ -135,6 +156,58 @@
     </section>
     
     
+  <section id="firstSubDesignSection">
+    <h2>Assignment1 Design</h2>
+      <section >
+        <strong>IxD Process</strong>
+        Goal Alignment
+        - The goal is to create an easy-to-navigate website containing pieces of my 
+        portfolio and technical documentation. This will be done through the 
+        usage of HTML and CSS.
+        - The user in this case will be the marker of the website and maybe some 
+        of my peers. Their main goal in visiting the website is to get pieces of the 
+        portfolio as previously mentioned.
+      </section>
+
+      <section>
+        <strong>Interface elements </strong>
+       <p> Input Controls :
+        - Buttons: With links to the different pages
+      </p>
+      <p>  Navigation 
+        - Breadcrumb - Allowing the user to view the page they’re on, and 
+          navigate easily to the previous page.
+      </p>
+      </section>
+
+      <section id="wireframes">
+        <h2>Wireframes</h2>
+        <section class="image-container">
+  
+          <section class="image-wrapper">
+            <img src="Design\WireframesAssignment1\Wireframe for Website.png" alt="Wireframe 1">
+            <p>Profile Wireframe</p>
+          </section>
+          
+          <section class="image-wrapper">
+            <img src="Design\WireframesAssignment1\Wireframe for Homepage.png" alt="Wireframe 2">
+            <p>Homepage Wireframe</p>
+          </section>
+
+          
+        </section>
+      </section>
+       
+      
+        
+      
+
+
+
+
+
+  </section>
+
     </a>
   </main>
 
@@ -142,7 +215,7 @@
     <p>Mthokozisi</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
  
 </body>
 </html>

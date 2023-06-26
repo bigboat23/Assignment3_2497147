@@ -1,34 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>Home</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <style>
+   
+  </style>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
-        <li><a href="blog.html"><i class="fas fa-blog"></i> Blogs</a></li>
-        <li><a href="essay.html"><i class="fas fa-file-alt"></i> Essay</a></li>
-        <li><a href="design.html"><i class="fas fa-pencil-ruler"></i> Design</a></li>
-        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="index.html" class="home-button"><i class="fas fa-home"></i></a></li>
+        <li><button id="profileButton"><i class="fas fa-user"></i> Profile</button></li>
+        <li><button id="blogButton"><i class="fas fa-blog"></i> Blogs</button></li>
+        <li><button id="essayButton"><i class="fas fa-file-alt"></i> Essay</button></li>
+        <li><button id="designButton"><i class="fas fa-pencil-ruler"></i> Design</button></li>
+        <li><button id="portfolioButton"><i class="fas fa-briefcase"></i> Portfolio</button></li>
+        <li><button id="homeButton"><i class="fas fa-home"></i> Home</button></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="image-section">
-      <div id="image-track" data-mouse-down-at="0">
-        <img id="image1" class="image" src="https://th.bing.com/th/id/OIG.G62LJpGFT5g.hft7NAu8?pid=ImgGn/" draggable="false">
-        <img id="image2" class="image" src="https://th.bing.com/th/id/OIG.RjXSPuTeyLI3zzfKQC_m?pid=ImgGn/" draggable="false">
-        <img id="image3" class="image" src="https://th.bing.com/th/id/OIG.G62LJpGFT5g.hft7NAu8?pid=ImgGn/" draggable="false">
-      </div>
+    <section>
+      <section id="image-track">
+        <a href="https://coolwallpapers.me/picsup/1306519-metal-gear-solid-3-snake-eater.jpg" data-fancybox="gallery" data-caption="Kept You Waiting Huh. The greatest game made on a mechanical and narrative standpoint ">
+          <img src="https://coolwallpapers.me/picsup/1306519-metal-gear-solid-3-snake-eater.jpg" class="image" draggable="false">
+        </a>
+        <a href="https://giffiles.alphacoders.com/995/99544.gif" data-fancybox="gallery" data-caption="Pagani Huayra Pure Art.">
+          <img src="https://giffiles.alphacoders.com/995/99544.gif" class="image" draggable="false">
+        </a>
+        <a href="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG8zMW94bjA5cWU2NXEwOWtvNm5kN2lwajdpOTgxbzdkczBjdzNjaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PmMZlooADdbcYozsy4/giphy.gif" data-fancybox="gallery" data-caption="Mancs Like US">
+          <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG8zMW94bjA5cWU2NXEwOWtvNm5kN2lwajdpOTgxbzdkczBjdzNjaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PmMZlooADdbcYozsy4/giphy.gif" class="image" draggable="false">
+        </a>
+        <a href="https://th.bing.com/th/id/OIG.G62LJpGFT5g.hft7NAu8?pid=ImgGn/" data-fancybox="gallery" data-caption="Image 4">
+          <img src="https://th.bing.com/th/id/OIG.G62LJpGFT5g.hft7NAu8?pid=ImgGn/" class="image" draggable="false">
+        </a>
+      </section>
     </section>
   </main>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

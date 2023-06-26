@@ -5,19 +5,19 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
-  <script src="script.js" defer></script>
+
 
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
-        <li><a href="blog.html"><i class="fas fa-blog"></i> Blogs</a></li>
-        <li><a href="essay.html"><i class="fas fa-file-alt"></i> Essay</a></li>
-        <li><a href="design.html"><i class="fas fa-pencil-ruler"></i> Design</a></li>
-        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="index.html" class="home-button"><i class="fas fa-home"></i> </a></li>
+        <li><button id="profileButton"><i class="fas fa-user"></i> Profile</button></li>
+        <li><button id="blogButton"><i class="fas fa-blog"></i> Blogs</button></li>
+        <li><button id="essayButton"><i class="fas fa-file-alt"></i> Essay</button></li>
+        <li><button id="designButton"><i class="fas fa-pencil-ruler"></i> Design</button></li>
+        <li><button id="portfolioButton"><i class="fas fa-briefcase"></i> Portfolio</button></li>
+        <li><button id="homeButton"><i class="fas fa-home"></i> Home</button></li>
       </ul>
     </nav>
   </header>
@@ -44,141 +44,140 @@
   <section id="blog">
     <div class="blog-content">
       <h2>Blog</h2>
-      <div id="week1">
-        <!-- Content for Week 1 -->
-        <h3>Week 1 Blog Post</h3>
-        <p>Git: I had previously used Github in the previous year, so setting it up wasn’t very difficult. I won’t spend too much time on this here.
-          Library of Babe: Just as the library contains an infinite number of books, the internet contains an endless amount of information, accessible from all corners of the world. Like the librarians in the story, we as users of the internet are often overwhelmed by the vastness of information available, and we struggle to find meaning or significance in it. the story also touches on the idea that despite the vastness of the library or the internet, there may be limits to what we can know and understand. similarly, despite the abundance of information available on the internet, there may be inherent limitations to our ability to fully comprehend the complexities of the world we live in. This also coupled with the deteriorating attention spans further proves the main point of the reading. As we touched upon in class too, with the growth of all this information, it mostly all ends up in the same industry in the end.
-          My goal in this course is to acquire new skills and knowledge, whether in a successful or unsuccessful way, according to the CBO. The reason why I chose this particular course is my fascination with the design of user interfaces (UI) and user experiences (UX), not just limited to websites but in various industries and products. I am intrigued by how our interactions with these products impact our overall experience and performance.
-        </p>
-      </div>
-      <!-- Add more blog posts here -->
-      <div id="week2">
-        <!-- Content for Week 2 -->
-        <h3>Week 2 Blog Post</h3>
-        <p>                                                                           Week 2
 
-          My main focus for this week was mainly trying to catch up with all the worse I had missed or wasn’t able to. 
-          <br>
-          I had previously worked a bit with HTML and CSS in High school. But honestly had lost all of the knowledge I had of the work done. I also had watched videos on it, not exactly related to the course material on YouTube further giving me the idea of what I’ll have to learn. The first thing I decided to do again, was just displaying text on a webpage, then display a GIF on the webpage. This was relatively easy, because its similar to other programming languages. 
-          The internet began as a simple mechanism for exchanging research and eventually developed into the large and diverse network of websites we have today. It has become an essential part of our everyday lives, with billions of people utilizing it for communication, information exchange, work, and enjoyment. However, greater connection comes with responsibilities and possible drawbacks, such as difficulties with user privacy and online abuse. Despite these issues, the internet continues to adapt and expand, with continual attempts to make it more accessible and inclusive for all. The section continues by underlining the importance of continuous accountability and innovation in order to guarantee that the internet remains a revolutionary force for positive change in the future.
+      <section id="week1">
+        <article>
+          <h3>Week 1 Blog Post</h3>
+          <p>
+            <strong>Git:</strong> I had previously used Github in the previous year, so setting it up wasn’t very difficult. I won’t spend too much time on this here.
           </p>
-      </div>
-
-      <div id="week3">
-        <!-- Content for Week 3 -->
-        <h3>Week 3 Blog Post</h3>
-        <p>                                                                           Week 3
-
-          Website : On making the website, I hadn’t made much progress apart from just wireframing and still trying to figure out exactly what I want to be on my website.<br> I’ve been looking at other websites I’ve liked in the past(some good, some not so good). Then trying to adapt that to my own design for now. What has been interesting to me however, is that most of these sites aren’t actually clean or easy to use, but I’ve still adapted to using them all the time on the daily, YouTube, the Supersport site and BT Sport being examples of these.
-          <br>
-          Reading reflection: Similar to how literary interpretation relates and depends on both the convention and context, effective UI/Ux similarly relies on understanding the user and already known design conventions. The designer should be aware and use the current design conventions that the users have already been accustomed to in their other digital spaces, but also consider what the context of the design. Like, the specific work environment, the device the interface. This will ultimately have an influence on the design decisions put forward. 
-          
+          <p>
+            <strong>Library of Babe:</strong> Just as the library contains an infinite number of books, the internet contains an endless amount of information, accessible from all corners of the world. Like the librarians in the story, we as users of the internet are often overwhelmed by the vastness of information available, and we struggle to find meaning or significance in it. The story also touches on the idea that despite the vastness of the library or the internet, there may be limits to what we can know and understand. Similarly, despite the abundance of information available on the internet, there may be inherent limitations to our ability to fully comprehend the complexities of the world we live in. This also coupled with the deteriorating attention spans further proves the main point of the reading. As we touched upon in class too, with the growth of all this information, it mostly all ends up in the same industry in the end.
           </p>
-      </div>
-
-      <div id="week4">
-        <!-- Content for Week 3 -->
-        <h3>Week 4 Blog Post</h3>
-        <p>                                                                           Week 4
-
-          Website : My design so far has been rough and basic, but I can already tell that some revisions need to be done. In the previous week, I tried looking at some of the sites I use for inspiration and drew down basic wireframes of them. I found that they aren’t exactly quite good to interact with, but there are some design decisions done on purpose. On the YouTube mobile app for example, in order to comment on a video, you’ll will have to scroll down and see through some other recommend videos, before getting to the comment section. This was done with the obvious intention of making you view more content, but I dislike having to do so much when a button for this could’ve been added together with the dislike and like section.
-          <br>
-          Readings and lecture reflection: What I got from the readings is: is that design is mostly about problem-solving and the responsibility on the designer’s side to be inclusive and sustainable (Papanek,1984), interface design should go beyond the traditional GUIS and consider the user’s goals(Gibson, 2004) and that effective UI design must prioritize the users’ experience. The main thing in common here, is that they all prioritize and emphasize the importance of the user and meeting their by solving their problems. 
-          <br>
-          In the lecture, we discussed how interactivity and interface are linked in their existence. Many parts of the design aren’t exclusive to each other, and have a direct relationship. 
-          
-          Own Design relating to readings: My own design at this point has kind of stagnated. I haven’t done too much to improve on it. But after the readings, I know about some of the things I have to consider about the user. As I had previously mentioned on my analysis of the YouTube GUI, there are some obvious design decisions that I will have to try and achieve. 
-          <br>
-          I also had the same finding with my wireframes, that I wasn’t largely taking the user’s goals into consideration, but mostly just trying to show as much content as possible to the user. The end goal of this site, will be to make a user-friendly site that will meet their demands, which is to get all the information they’ve come onto the site for.
-
-          
+          <p>
+            My goal in this course is to acquire new skills and knowledge, whether in a successful or unsuccessful way, according to the CBO. The reason why I chose this particular course is my fascination with the design of user interfaces (UI) and user experiences (UX), not just limited to websites but in various industries and products. I am intrigued by how our interactions with these products impact our overall experience and performance.
           </p>
+        </article>
+      </section>
+      
+   
+      <section id="week2">
+        <article>
+          <h3>Week 2 Blog Post</h3>
+          <p>Week 2</p>
+          <p>
+            My main focus for this week was mainly trying to catch up with all the worse I had missed or wasn’t able to.
+          </p>
+          <p>
+            I had previously worked a bit with HTML and CSS in High school. But honestly had lost all of the knowledge I had of the work done. I also had watched videos on it, not exactly related to the course material on YouTube further giving me the idea of what I’ll have to learn. The first thing I decided to do again was just displaying text on a webpage, then display a GIF on the webpage. This was relatively easy because it's similar to other programming languages.
+          </p>
+          <p>
+            The internet began as a simple mechanism for exchanging research and eventually developed into the large and diverse network of websites we have today. It has become an essential part of our everyday lives, with billions of people utilizing it for communication, information exchange, work, and enjoyment. However, greater connection comes with responsibilities and possible drawbacks, such as difficulties with user privacy and online abuse. Despite these issues, the internet continues to adapt and expand, with continual attempts to make it more accessible and inclusive for all. The section continues by underlining the importance of continuous accountability and innovation to guarantee that the internet remains a revolutionary force for positive change in the future.
+          </p>
+        </article>
+      </section>
+      
+      <section id="week3">
+        <article>
+          <h3>Week 3 Blog Post</h3>
+          <p>Week 3</p>
+          <p>
+            <strong>Website:</strong> On making the website, I hadn’t made much progress apart from just wireframing and still trying to figure out exactly what I want to be on my website.
+          </p>
+          <p>
+            I’ve been looking at other websites I’ve liked in the past (some good, some not so good). Then trying to adapt that to my own design for now. What has been interesting to me, however, is that most of these sites aren’t actually clean or easy to use, but I’ve still adapted to using them all the time on the daily, YouTube, the Supersport site, and BT Sport being examples of these.
+          </p>
+          <p>
+            <strong>Reading reflection:</strong> Similar to how literary interpretation relates and depends on both the convention and context, effective UI/UX similarly relies on understanding the user and already known design conventions. The designer should be aware and use the current design conventions that the users have already been accustomed to in their other digital spaces but also consider the context of the design. Like the specific work environment, the device the interface. This will ultimately have an influence on the design decisions put forward.
+          </p>
+        </article>
+      </section>
+      
+      <section id="week4">
+        <article>
+          <h3>Week 4 Blog Post</h3>
+          <p>Week 4</p>
+          <p>
+           <strong> Website: </strong> My design so far has been rough and basic, but I can already tell that some revisions need to be done. In the previous week, I tried looking at some of the sites I use for inspiration and drew down basic wireframes of them. I found that they aren’t exactly quite good to interact with, but there are some design decisions done on purpose. On the YouTube mobile app, for example, in order to comment on a video, you’ll have to scroll down and see through some other recommended videos before getting to the comment section. This was done with the obvious intention of making you view more content, but I dislike having to do so much when a button for this could’ve been added together with the dislike and like section.
+          </p>
+          <p>
+            <strong>Readings and lecture reflection:</strong> What I got from the readings is that design is mostly about problem-solving and the responsibility on the designer’s side to be inclusive and sustainable (Papanek, 1984). Interface design should go beyond the traditional GUIs and consider the user’s goals (Gibson, 2004), and that effective UI design must prioritize the users’ experience. The main thing in common here is that they all prioritize and emphasize the importance of the user and meeting their by solving their problems.
+          </p>
+          <p>
+            In the lecture, we discussed how interactivity and interface are linked in their existence. Many parts of the design aren’t exclusive to each other and have a direct relationship.
+          </p>
+          <p>
+            Own Design relating to readings: My own design at this point has kind of stagnated. I haven’t done too much to improve on it. But after the readings, I know about some of the things I have to consider about the user. As I had previously mentioned on my analysis of the YouTube GUI, there are some obvious design decisions that I will have to try and achieve.
+          </p>
+          <p>
+            I also had the same finding with my wireframes, that I wasn’t largely taking the user’s goals into consideration but mostly just trying to show as much content as possible to the user. The end goal of this site will be to make a user-friendly site that will meet their demands, which is to get all the information they’ve come onto the site for.
+          </p>
+        </section>
       </div>
       
-      <div id="week5">
-        <!-- Content for Week 5 -->
+      
+      <section id="week5">
         <h3>Week 5 and 6 Blog Post</h3>
         <p>
           This week I didn’t really look at academic readings but UI and design in the industry, particularly the computing devices industry. I found it interesting how Apple’s overall design in the industry has almost become the standard/benchmark. 
-          But one of the main reasons I found for their consistency over their products, is because of the very small lineup of products relative to their main competitors in Samsung/Dell/Xiaomi. This is also why a lot of other devices have better optimization than Apple devices because of their closed-off hardware and software variations. 
+          But one of the main reasons I found for their consistency over their products is because of the very small lineup of products relative to their main competitors in Samsung/Dell/Xiaomi. This is also why a lot of other devices have better optimization than Apple devices because of their closed-off hardware and software variations. 
           Onwards and Upwards.(2022). Everyone Wants to be Apple [Video]. YouTube. https://youtu.be/3XuP_I28HgY
-          <br>
-
         </p>
-      </div>
-
-      <div id="week7">
-        <!-- Content for Week 7 -->
+      </section>
+      
+      <section id="week7">
         <h3>Week 7 Blog Post</h3>
         <p>
-          Website : This week, basically just some basic tinkering on the website. Most of the work went towards doing the readings, but I made the decision that I would only mainly focus on making the site using HTML and CSS. The reason for this, is because I would like to try and keep it a bit simple, also because my understanding of Javascript is quite low at this point.
-          Readings : The reading mainly describes user experience as the response given by the user based on the usage of the specific system. It is also defined as encompassing different aspects as well, like usability and satisfaction. This made me think of Apple and how their man focuses in design are to make user-friendly systems that are also aesthetically pleasing. They also argue the sentiment that design should both be objective and subjective. Analysis and review with self-report measures as well as objective methods. Lastly, it also speaks about how research in UX can lead to the development of more improved guidelines and designs for their customers. An example of this is Amazon’s consistent use of surveys and studies on how they can enhance usability and increase customer satisfaction. The Amazon one-click checkout system was designed through this system, to make a quick and more streamlined checkout process. 
-          <br>
-          IxD Process: 
-          Honestly, at this moment I hadn’t done much more than drawing up wireframes for the site. I’ve only made a single page for the site using html and css. From this I have only set out my main goal, which is to make a website that’s easy to navigate without any hurdles. In terms of the navigation, I’ve only though about having the user clicking on links and maybe scrolling through other sections as well.
-          <br>
+          Website:
+          This week, basically just some basic tinkering on the website. Most of the work went towards doing the readings, but I made the decision that I would only mainly focus on making the site using HTML and CSS. The reason for this is because I would like to try and keep it a bit simple, also because my understanding of JavaScript is quite low at this point.
+          Readings:
+          The reading mainly describes user experience as the response given by the user based on the usage of the specific system. It is also defined as encompassing different aspects as well, like usability and satisfaction. This made me think of Apple and how their main focuses in design are to make user-friendly systems that are also aesthetically pleasing. They also argue the sentiment that design should both be objective and subjective. Analysis and review with self-report measures as well as objective methods. Lastly, it also speaks about how research in UX can lead to the development of more improved guidelines and designs for their customers. An example of this is Amazon’s consistent use of surveys and studies on how they can enhance usability and increase customer satisfaction. The Amazon one-click checkout system was designed through this system, to make a quick and more streamlined checkout process.
+          IxD Process:
+          Honestly, at this moment I hadn’t done much more than drawing up wireframes for the site. I’ve only made a single page for the site using HTML and CSS. From this, I have only set out my main goal, which is to make a website that’s easy to navigate without any hurdles. In terms of the navigation, I’ve only thought about having the user clicking on links and maybe scrolling through other sections as well.
         </p>
-      </div>
-      <!-- Add more blog posts here -->
-      <div id="week8">
-        
+      </section>
+      
+      <section id="week8">
         <h3>Week 8 Blog Post</h3>
         <p>
-          Reflection on Website<br>
-
+         <strong> Reflection on Website:</strong>
           I think what mostly because I started development on my site quite late, I wasn’t able to properly adhere to the design decisions I wanted to implement. 
-          What I want to do in the future is create a cohesive and visually appealing website that matches my initial goal( with a major focus on functionality and design ethics). Furthermore, I understand the need of appropriate planning and time management in the development process. I can ensure a more planned and methodical approach to website building by providing myself adequate time for each stage, from conceptualization to implementation.
-          <br>
-          Furthermore, in future , I plan to focus user experience and functionality. To ensure easy navigation, quick loading times, and seamless integration of features, the website must be thoroughly tested and optimized. I can detect and fix any potential difficulties or areas for improvement by paying attention to user feedback and conducting rigorous usability testing.         
+          What I want to do in the future is create a cohesive and visually appealing website that matches my initial goal (with a major focus on functionality and design ethics). Furthermore, I understand the need for appropriate planning and time management in the development process. I can ensure a more planned and methodical approach to website building by providing myself adequate time for each stage, from conceptualization to implementation.
+          Furthermore, in the future, I plan to focus on user experience and functionality. To ensure easy navigation, quick loading times, and seamless integration of features, the website must be thoroughly tested and optimized. I can detect and fix any potential difficulties or areas for improvement by paying attention to user feedback and conducting rigorous usability testing.
         </p>
-
         <p>
-          Readings<br>
-          Digital Hegemonies: The Localness of Search Engine Results,"<br>
+          <strong>Readings:</strong>
+          Digital Hegemonies: The Localness of Search Engine Results,
           The reading by Andrea Ballatore (2017), titled "Digital Hegemonies: The Localness of Search Engine Results," clearly demonstrates the digital gaps and inequalities that exist in the field of online information access. This reading focuses on the scarcity of African content production on the World Wide Web, emphasizing the unequal distribution of internet access and its impact on knowledge generation and representation. The dominance of first-world countries in content production widens the gap, leaving African nations mostly as consumers rather than providers to the digital landscape. This imbalance feeds a cycle in which local viewpoints and information are frequently dominated by foreign perspectives, limiting the development of a diverse and inclusive online environment.
-          <br>
-          Ballatore  (2017)'s study corresponds with the class topic on digital gaps and inequality, focusing on the locality of search engine results. The reading underscores the idea that the internet, which is supposed to be an equalizer of knowledge, falls short of its potential due to individualized search result optimization and the default effect. These strategies not only help to maintain digital hegemonies, but they also prevent users from obtaining a varied range of perspectives and localized knowledge. While efforts are being made to solve this issue through user settings, reflections indicate that more measures are required to overcome the inherent biases and limitations in the way information is given through search engines.
-  
-       
+          Ballatore (2017)'s study corresponds with the class topic on digital gaps and inequality, focusing on the locality of search engine results. The reading underscores the idea that the internet, which is supposed to be an equalizer of knowledge, falls short of its potential due to individualized search result optimization and the default effect. These strategies not only help to maintain digital hegemonies, but they also prevent users from obtaining a varied range of perspectives and localized knowledge. While efforts are being made to solve this issue through user settings, reflections indicate that more measures are required to overcome the inherent biases and limitations in the way information is given through search engines.
         </p>
-      </div>
-
-      <div id="week9">
-        <!-- Content for Week 8 -->
+      </section>
+      
+      <section id="week9">
         <h3>Week 9 Blog Post</h3>
         <p>
-
-          The exercises for this week, we're mostly about styling text using CSS, which was very helpful, because I did struggle a bit with optimizing text. This also relates to me trying to use media queries. I've been wokring on optimizing content for smaller display, which is extremely important, since most users will be on their phones or tablets. 
-<br>
+          The exercises for this week were mostly about styling text using CSS, which was very helpful because I did struggle a bit with optimizing text. This also relates to me trying to use media queries. I've been working on optimizing content for smaller displays, which is extremely important since most users will be on their phones or tablets.
           In my website development, I extensively utilized flexboxes, and I found that it significantly contributed to the overall design and layout. Flexbox has proven to be a valuable tool for creating flexible and responsive web interfaces. It allowed me to easily align and distribute elements within containers, providing a seamless and dynamic arrangement of content.
-          
         </p>
-
         <p>
-        The case for Industrial revolution in South Africa<br>
-
+          <strong>The case for Industrial revolution in South Africa:</strong>
           The section focuses on the South African government's failure to implement effective industrial reform, particularly in the automotive industry. It highlights the risks posed by the 4IR, as it reduces job creation and necessitates highly skilled workers, which South Africa lacks due to its poor education system. The debate over industrial automation emphasizes the mixed threat it poses, with potential job losses affecting poorly qualified workers while highly skilled workers may find opportunities in new 4IR industries. However, without a strong industrial base, the shift to services could be detrimental to South African employment rates.
-        <br><br>
-          Robotics and software advancements are enabling the production of complex and customized goods, which is revolutionizing manufacturing processes. The European Commission proposes policies to boost competitiveness and economic recovery, but there are concerns about potential disparities between successful businesses and member states. While job losses are expected, studies indicate that the overall impact will be limited, with less qualified workers being most at risk. Domestic robots and mining automation provide benefits as well, but raise privacy and safety concerns. Overall, industrial automation transforms various sectors, increasing productivity and efficiency while necessitating careful consideration of employment and societal implications.
+          Robotics and software advancements are enabling the production of complex and customized goods, which is revolutionizing manufacturing processes. The European Commission proposes policies to boost competitiveness and economic recovery, but there are concerns about potential disparities between successful businesses and member states. While job losses are expected, studies indicate that the overall impact will be limited, with less qualified workers being most at risk. Domestic robots and mining automation provide benefits as well but raise privacy and safety concerns. Overall, industrial automation transforms various sectors, increasing productivity and efficiency while necessitating careful consideration of employment and societal implications.
         </p>
-      </div>
-
-      <div id="week10">
-        <!-- Content for Week 8 -->
+      </section>
+      
+      <section id="week10">
         <h3>Week 10 Blog Post</h3>
         <p>
-          Giorgos Verdi's "The Road to Technocolonialism" offers valuable insights into the emerging global dynamics of power and influence driven by artificial intelligence (AI). The article focuses on the US-China AI duopoly, which is propelled by their tech behemoths, GAFAMI and BATX. As other states, particularly developing nations, seek access to AI technologies for their prosperity and security, this asymmetry presents challenges.
-
-          Verdi expresses concern about the implications of this techno-colonial relationship. Developing countries, lacking the necessary infrastructure and resources to develop AI systems on their own, may become dependent on the AI Superpowers for technology access and economic assistance. In exchange, these countries may be forced to trade their citizens' data, resulting in centralized control and ownership of technology reminiscent of the domination. The article emphasizes the growing dependence of African nations on US and Chinese digital technologies, highlighting the potential loss of economic, cultural, and political autonomy.
+          Giorgos Verdi's <strong>"The Road to Technocolonialism"</strong> offers valuable insights into the emerging global dynamics of power and influence driven by artificial intelligence (AI). The reading explores how AI development is concentrated in a few dominant countries, namely the United States and China, creating a technocolonialism scenario where smaller nations are left dependent on these technological giants for AI-driven solutions. The author emphasizes the urgent need for countries to develop their own AI capabilities and regulations to avoid being subjugated in a technologically imbalanced world.
+          The reading aligns with the course theme of AI and society, shedding light on the geopolitical implications of AI dominance. It highlights the potential risks associated with a concentration of AI power and the need for diverse and inclusive AI development. Additionally, it emphasizes the importance of establishing global cooperation and ethical frameworks to govern AI technologies and prevent the exacerbation of existing inequalities.
         </p>
-
-      <p>
-
-        In further development of the site, I added scrolling features enhanced by Javascript. This is something I've noticed on a lot of sites i use, but don't think too much about it. It just makes the experience smoother and in my opinion enhances the user experience. Other than that however, there's not much else i've been able to think about implementing. 
-      </p>
-      </div>
-
+        <p>
+          As for my website progress, I have made significant strides in implementing responsive design. I focused on creating media queries to adapt the layout and styling of the website to different screen sizes. By utilizing CSS breakpoints, I ensured that the content is displayed optimally on both desktop and mobile devices. The process involved rearranging elements, adjusting font sizes, and modifying the navigation menu to enhance the user experience across various devices.
+          Going forward, I plan to continue refining the website's responsiveness and optimizing it for a wider range of screen sizes. I aim to conduct thorough testing on different devices and browsers to ensure a seamless and consistent experience for all users.
+        </p>
+      </section>
+      
       <div id="week11">
         <!-- Content for Week 8 -->
         <h3>Week 11 Blog Post</h3>
@@ -256,11 +255,13 @@
   </section>
 
 
- 
+  
 
   
   <footer>
     <p>Mthokozisi</p>
   </footer>
+  <button id="scrollToTopButton" class="scroll-to-top-button">
+  <script src="script.js" defer></script>
 </body>
 </html>

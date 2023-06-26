@@ -1,3 +1,39 @@
+// Select the navigation container
+const navigationContainer = document.querySelector('nav ul');
+
+// Add event listener to the navigation container
+navigationContainer.addEventListener('click', (event) => {
+  const targetButton = event.target.closest('button');
+  if (targetButton) {
+    const targetId = targetButton.id;
+    switch (targetId) {
+      case 'profileButton':
+        GoToPage('profile.html');
+        break;
+      case 'blogButton':
+        GoToPage('blog.html');
+        break;
+      case 'essayButton':
+        GoToPage('essay.html');
+        break;
+      case 'designButton':
+        GoToPage('design.html');
+        break;
+      case 'portfolioButton':
+        GoToPage('portfolio.html');
+        break;
+      case 'homeButton':
+        GoToPage('index.html');
+        break;
+    }
+  }
+});
+
+// Navigation function
+function GoToPage(page) {
+  window.location.href = page;
+}
+
 // Smooth Scrolling
 const scrollLinks = document.querySelectorAll('a.smooth-scroll');
 
@@ -22,26 +58,6 @@ menuIcon.addEventListener('click', () => {
   mobileNav.classList.toggle('show');
 });
 
-// Select the scroll-to-top button
-const scrollToTopButton = document.getElementById('scrollToTopButton');
-
-// Show or hide the scroll-to-top button based on the scroll position
-window.addEventListener('scroll', function () {
-  if (window.pageYOffset > 100) {
-    scrollToTopButton.classList.add('show');
-  } else {
-    scrollToTopButton.classList.remove('show');
-  }
-});
-
-// Scroll to the top when the button is clicked
-scrollToTopButton.addEventListener('click', function (e) {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
 
 
 // Smooth Dropdown
@@ -56,4 +72,61 @@ function toggleDropdown(week) {
     dropdownContent.style.maxHeight = `${dropdownContent.scrollHeight}px`;
   }
 }
+// scroll to element
+
+function scrollToElement(elementId) {
+  const targetElement = document.getElementById(elementId);
+  
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+}
+
+// Lightbox Gallery
+const images = document.querySelectorAll('#image-track img');
+
+images.forEach((image) => {
+  let gifPlaying = false;
+
+  image.addEventListener('click', () => {
+    // Check if the clicked image is the one you want to trigger the GIF animation
+    if (image.src === 'https://giffiles.alphacoders.com/995/99544.gif' && !gifPlaying) {
+      // Play the GIF animation
+      gifPlaying = true;
+      image.src = 'https://giffiles.alphacoders.com/995/99544.gif';
+    } else {
+      // Create a lightbox overlay element
+      const overlay = document.createElement('div');
+      overlay.classList.add('overlay');
+
+      // Create an image element for the lightbox
+      const lightboxImage = document.createElement('img');
+      lightboxImage.src = image.src;
+      lightboxImage.classList.add('lightbox-image');
+
+      // Append the lightbox image to the overlay
+      overlay.appendChild(lightboxImage);
+
+      // Add the overlay to the document body
+      document.body.appendChild(overlay);
+
+      // Remove the overlay when clicked
+      overlay.addEventListener('click', () => {
+        document.body.removeChild(overlay);
+      });
+    }
+  });
+});
+
+// Automatically play the "Snake Eater" theme
+const snakeEaterImage = document.querySelector('a[data-caption="Kept You Waiting Huh "] img');
+
+snakeEaterImage.addEventListener('click', (event) => {
+  event.preventDefault();
+  const audio = new Audio('SnakeEater.mp3');
+  audio.play();
+});
 
